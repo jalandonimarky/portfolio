@@ -1,4 +1,4 @@
-// Wait until the DOM is fully loaded
+// scripts.js
 document.addEventListener('DOMContentLoaded', function() {
     // Intersection Observer for section animations
     const sections = document.querySelectorAll('section');
@@ -20,21 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // Initialize EmailJS
-    emailjs.init("S39pqqrElUokZJbtT");
 
-    // Form submit event listener
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+ // scripts.js
 
-        // Send the email
-        emailjs.sendForm('service_8jv9rdd', 'template_qzyhtiz', this)
-            .then(function(response) {
-                alert('Message sent successfully!');
-                // Clear the form
-                document.querySelector('form').reset();
-            }, function(error) {
-                alert('Failed to send message. Please try again.');
-            });
-    });
+// Initialize EmailJS
+emailjs.init("S39pqqrElUokZJbtT");
+
+// Form submit event listener
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Send the email
+    emailjs.sendForm('service_8jv9rdd', 'template_qzyhtiz', this)
+        .then(function(response) {
+            alert('Message sent successfully!');
+            // Clear the form
+            document.querySelector('form').reset();
+        }, function(error) {
+            alert('Failed to send message. Please try again.');
+        });
 });
