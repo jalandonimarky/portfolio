@@ -3,52 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marky's Tech Portfolio - Automation Engineer and Web Developer with expertise in AI, webhooks, CRM integrations, and IT solutions.">
     <title>Marky's Tech Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
-    <style>
-        /* Add styles for centering and sizing the profile picture */
-        .about-content {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .about-content img {
-            border-radius: 50%;
-            width: 150px; /* Adjust width as needed */
-            height: 150px; /* Adjust height as needed */
-            object-fit: cover;
-        }
-
-        .about-content p {
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        /* Hide the contact form */
-        #contactForm {
-            display: none;
-        }
-
-        /* Add hover effect for skills */
-        .skills-list li {
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+  <!-- Header Section -->
     <header>
         <h1>MARK ANTHONY JALANDONI</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://calendly.com/markyjalandoni-mj">Schedule a Meeting</a></li>
-            </ul>
+         <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://calendly.com/markyjalandoni-mj">Schedule a Meeting</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">More Options</a>
+        <ul class="submenu">
+            <li><a href="https://drive.google.com/file/d/1oONTJzJrBy5l4jBuQgIAr0Wuu7neoa7u/view?usp=sharing">Download Resume</a></li>
+            <li><a href="#projectGallery">Project Gallery</a></li>
+            <li><a href="#miniGames">Mini Games</a></li>
+            <li><a href="#careerHistory">Career History</a></li>
+        </ul>
+    </li>
+</ul>
+
         </nav>
     </header>
 
@@ -59,8 +41,8 @@
             <div class="profile-picture">
                 <img src="https://media.licdn.com/dms/image/v2/D5603AQHDIuByuSpoHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722922023495?e=1732147200&v=beta&t=GYdPUfcqn2RqOub6xXLoIdXZFiMEE-7lo-Lhr4tkZIA" alt="Mark Anthony Jalandoni">
             </div>
-            <p>Hey, I'm Marky—an experienced Technical Engineer and Automation Specialist with over four years in the IT industry. I specialize in automating processes through API and webhooks, enhancing efficiency and productivity.</p>
-            <p>My expertise extends to CRM integrations, optimizing IT infrastructure, and working with REST APIs and XML. I also oversee projects and utilize tools like Google Analytics and Zapier for streamlined data reporting and marketing strategies. I’m dedicated to delivering innovative solutions while continuously advancing my knowledge in the ever-evolving tech landscape.</p>
+            <p>Hey, I'm Marky—an experienced Technical Engineer and Automation Specialist with over four years in the IT industry. I excel in automating processes using AI and webhooks, and I'm proficient in technologies like Azure, Citrix, and Microsoft O365.</p>
+            <p>My skills span from active directory management, cybersecurity, and CRM integrations, along with troubleshooting and development in HTML, CSS, and Java. I’m adept at optimizing IT infrastructure, managing projects, and leveraging tools like Google Analytics and Zapier for efficient data reporting and marketing strategies. Committed to delivering innovative solutions while staying at the forefront of industry advancements.</p>
         </div>
     </section>
 
@@ -152,7 +134,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Mark Anthony Jalandoni</p>
+        <p>&copy; Mark Anthony Jalandoni</p>
     </footer>
 
     <!-- Sound effect for hover -->
