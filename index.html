@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marky's Tech Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <style>
+        /* Add styles for centering and sizing the profile picture */
+        .about-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            width: 150px; /* Adjust width as needed */
+            height: 150px; /* Adjust height as needed */
+            object-fit: cover;
+        }
+
+        .about-content p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mark Anthony Jalandoni</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHDIuByuSpoHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722922023495?e=1732147200&v=beta&t=GYdPUfcqn2RqOub6xXLoIdXZFiMEE-7lo-Lhr4tkZIA" alt="Mark Anthony Jalandoni Profile Picture">
+
+            <p>Hey, I'm Marky—an experienced Technical Engineer and Automation Specialist with over four years in the IT industry. I excel in automating processes using AI and webhooks, and I'm proficient in technologies like Azure, Citrix, and Microsoft O365.</p>
+
+            <p>My skills span active directory management, cybersecurity, and CRM integrations, along with troubleshooting and development in HTML, CSS, and Java. I’m adept at optimizing IT infrastructure, managing projects, and leveraging tools like Google Analytics and Zapier for efficient data reporting and marketing strategies. Committed to delivering innovative solutions while staying at the forefront of industry advancements.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>AI Chat Bots</h3>
+                <p>Created custom GPT models via Google Sheets and then implemented them in GPT. Integrated the AI chat bots into the client's CRM to enhance their customer support and engagement.</p>
+            </div>
+            <div class="project-card">
+                <h3>Automated VPN Checking</h3>
+                <p>Developed an automation system to check VPN connectivity through Slack, followed by email notifications. This solution streamlined monitoring and ensured timely alerts for connectivity issues.</p>
+            </div>
+            <div class="project-card">
+                <h3>Ticketing System Integration</h3>
+                <p>Built a ticketing system in HubSpot and Lofty, integrating with Zapier and Outlook for automated email notifications. This project improved ticket management and streamlined communication with clients.</p>
+            </div>
+            <div class="project-card">
+                <h3>CRM Automation for New Leads</h3>
+                <p>Developed an automation system for routing new leads to different CRMs. This solution optimized lead management and ensured that leads were directed to the appropriate CRM for effective follow-up.</p>
+            </div>
+            <div class="project-card">
+                <h3>Web Design and Development</h3>
+                <p>Designed and developed multiple websites from scratch for real estate, business, and landing pages. Utilized Wix, Squarespace, and WordPress, and assisted with hosting setup and domain management.</p>
+            </div>
+            <div class="project-card">
+                <h3>Robocall AI Automation</h3>
+                <p>Developed an AI-driven robocall system to automate outbound calls and integrate with CRM solutions. Enhanced operational efficiency by leveraging machine learning for intelligent call handling and real-time data analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Automation</li>
+            <li>Web Development</li>
+            <li>Cybersecurity</li>
+            <li>Technical Documentation</li>
+            <li>Project Management</li>
+            <li>Network Management</li>
+            <li>Cloud Integration</li>
+            <li>API Programming</li>
+            <li>CRM Optimization</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="from_name" placeholder="Your Name" required>
+            <input type="email" name="from_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/markyjalandoni21" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/anthonyjalandoni/" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+            <a href="https://www.onlinejobs.ph/jobseekers/info/1827304" target="_blank" rel="noopener noreferrer"><img src="https://www.onlinejobs.ph/images/oj-logo-icon.png" alt="OnlineJobs.ph"></a>
+            <a href="https://www.upwork.com/freelancers/markanthonyjalandoni" target="_blank" rel="noopener noreferrer"><img src="https://w7.pngwing.com/pngs/80/704/png-transparent-upwork-hd-logo.png" alt="Upwork"></a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Marky's Portfolio</p>
+    </footer>
+
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+
+</body>
+</html>
