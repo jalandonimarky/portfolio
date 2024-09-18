@@ -12,7 +12,7 @@ body {
 header {
     background-color: #111a2f;
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     position: sticky;
     top: 0;
@@ -64,12 +64,23 @@ h1, h2 {
     gap: 20px;
 }
 
+.profile-picture {
+    position: relative;
+    display: inline-block;
+}
+
 .profile-picture img {
     width: 150px; /* Adjust as needed */
     height: 150px; /* Adjust as needed */
     border-radius: 50%;
     border: 2px solid #58d1e7;
     object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover img {
+    transform: translateY(-10px); /* Lift the image on hover */
+    box-shadow: 0 0 15px rgba(0, 218, 255, 0.6); /* Neon glow effect */
 }
 
 .projects-grid {
@@ -237,21 +248,6 @@ footer {
     }
 }
 
-.profile-picture {
-    position: relative;
-    display: inline-block;
-}
-
-.profile-picture img {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    border-radius: 50%;
-    border: 2px solid #58d1e7;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-picture:hover img {
-    transform: translateY(-10px); /* Lift the image on hover */
-    box-shadow: 0 0 15px rgba(0, 218, 255, 0.6); /* Neon glow effect */
+header h1 {
+    margin-bottom: 1em; /* Adds space equivalent to two lines of text */
 }
