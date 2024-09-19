@@ -41,4 +41,20 @@ document.querySelector('form').addEventListener('submit', function(event) {
         });
 });
 
-  
+function toggleSkill(card) {
+    card.classList.toggle('active');
+}
+
+// JavaScript for playing sound on hover
+const hoverSound = document.getElementById('hoverSound');
+
+// Function to play sound
+function playHoverSound() {
+    hoverSound.currentTime = 0; // Reset sound to start
+    hoverSound.play();
+}
+
+// Add event listeners to skill cards
+document.querySelectorAll('.skill-card').forEach(item => {
+    item.addEventListener('mouseover', playHoverSound);
+});
